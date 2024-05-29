@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(astime)]:%(message)s:')
+logging.basicConfig(level=logging.INFO, format='[%(astime)]:%(message)s:', datefmt='%Y-%m-%d %H:%M:%S')
 
 project_name = "MLOps"
 
