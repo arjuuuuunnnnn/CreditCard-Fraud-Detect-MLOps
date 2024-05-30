@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps/raw/main/creditcard.csv.zip
+  source_URL: https://drive.google.com/file/d/1dO7l10h2BJL-gkEcKY4c6ccsj0OPfd7a/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
