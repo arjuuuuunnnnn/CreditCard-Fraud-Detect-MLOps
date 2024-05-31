@@ -29,7 +29,7 @@ COLUMNS:
   V27: float64
   V28: float64
   Amount: float64
-
+  Class: float64
 
 TARGET_COLUMN:
   
