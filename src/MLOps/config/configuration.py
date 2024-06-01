@@ -81,7 +81,7 @@ class ConfigurationManager:
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config.model_evaluation
         params = self.params.ElasticNet
-        schema = self.params.TARGET_COLUMN
+        schema = self.schema.TARGET_COLUMN
 
         create_directories([config.root_dir])
 
