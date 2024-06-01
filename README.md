@@ -1,38 +1,41 @@
 # A MLOps Project uses MLFlow, Dagshub
 
-Used to track, evaluate models
+## Overview:
+This is a MLOps (Machine Learning Operations) project that aims to detect credit card fraud. It utilizes `MLFlow` for tracking and evaluating models and `Dagshub` for managing the project's workflow
 
-## Usage:
-clone the repo
+
+#### Usage:
+
+clone this repo
 ```bash
 git clone https://github.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps.git
 ```
 
-### create env 
+#### create env 
 ```bash
 conda create -n cred python=3.8 -y
 ```
-### activate env
+
+#### activate env
 ```bash
 conda activate cred
 ```
 
-
-### install requirements
+#### install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Finally
+#### Finally
 ```bash
 python main.py
 ```
 
-### Dagshub uri:
+### Dagshub integration:
 [https://dagshub.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps](https://dagshub.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps)
 
 ### dagshub config
-Place this somewhere in the model evaluation file
+To configure Dagshub in the model evaluation file, include the following code:
 
 ```bash
 import dagshub
@@ -45,4 +48,4 @@ with mlflow.start_run():
 ```
 
 ### Any bugs?
-Feel free to open an issue
+If you encounter any bugs or issues while using the project, feel free to open an issue
