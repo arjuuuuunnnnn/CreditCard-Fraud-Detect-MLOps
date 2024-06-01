@@ -10,18 +10,18 @@ class DataTransformation:
 
         # add scalar, PCA, etc
 
-        def train_test_splitting(self):
-            data = pd.read_csv(self.config.data_path)
+    def train_test_splitting(self):
+        data = pd.read_csv(self.config.data_path)
 
-            train, tezt = train_test_split(data)
+        train, test = train_test_split(data)
 
-            train.to_csv(os.path.join(self.config.root_dir, "train.csv"), index = False)
-            test.to_csv(os.path.join(self.config.root_dir, "test.csv"), index = False)
+        train.to_csv(os.path.join(self.config.root_dir, "train.csv"), index = False)
+        test.to_csv(os.path.join(self.config.root_dir, "test.csv"), index = False)
 
-            logger.info("Splitted data into train and test sets")
-            logger.info(train.shape)
-            logger.info(test.shape)
+        logger.info("Splitted data into train and test sets")
+        logger.info(train.shape)
+        logger.info(test.shape)
 
-            print(train.shape)
-            print(test.shape)
+        print(train.shape)
+        print(test.shape)
 
