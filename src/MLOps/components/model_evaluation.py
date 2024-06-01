@@ -9,6 +9,10 @@ import joblib
 from src.MLOps.entity.config_entity import ModelEvaluationConfig
 from src.MLOps.utils.common import save_json
 from pathlib import Path
+import dagshub
+
+dagshub.init(repo_owner='arjuuuuunnnnn', repo_name='CreditCard-Fraud-Detect-MLOps', mlflow=True)
+
 
 class ModelEvaluation:
     def __init__(self, config: ModelEvaluationConfig):
