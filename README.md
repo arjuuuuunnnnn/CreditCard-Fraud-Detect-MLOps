@@ -49,3 +49,5 @@ with mlflow.start_run():
 
 ### Any bugs?
 If you encounter any bugs or issues while using the project, feel free to open an issue
+
+[](images/image.png)
