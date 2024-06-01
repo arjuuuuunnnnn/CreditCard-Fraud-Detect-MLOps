@@ -32,5 +32,4 @@ COLUMNS:
   Class: float64
 
 TARGET_COLUMN:
-  
   name: Class
