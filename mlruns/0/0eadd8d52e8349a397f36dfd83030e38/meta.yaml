@@ -1,0 +1,15 @@
+artifact_uri: file:///home/hemanth/only_ml/CreditCard-Fraud-Detect-MLOps/mlruns/0/0eadd8d52e8349a397f36dfd83030e38/artifacts
+end_time: 1717246943418
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0eadd8d52e8349a397f36dfd83030e38
+run_name: capricious-perch-670
+run_uuid: 0eadd8d52e8349a397f36dfd83030e38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717246932187
+status: 3
+tags: []
+user_id: hemanth
