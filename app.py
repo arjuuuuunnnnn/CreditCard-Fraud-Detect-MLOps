@@ -56,6 +56,9 @@ def index():
 
             pred = PredictionPipeline()
             predictt = pred.predict(data)
+            predictt = predictt[0]
+            predictt = predictt*100
+            predictt = f"{predictt}% Fraud"  
 
             return render_template('results.html', prediction = str(predictt))
         
