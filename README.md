@@ -30,6 +30,11 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+### UI
+```bash
+python app.py
+```
+
 
 ### Dagshub integration:
 [https://dagshub.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps](https://dagshub.com/arjuuuuunnnnn/CreditCard-Fraud-Detect-MLOps)
