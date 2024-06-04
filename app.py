@@ -20,7 +20,6 @@ def index():
     if request.method == "POST":
         try:
             Time = float(request.form["Time"])
-            Time = float(request.form["Time"])
             V1 = float(request.form["V1"])
             V2 = float(request.form["V2"])
             V3 = float(request.form["V3"])
@@ -50,9 +49,19 @@ def index():
             V27 = float(request.form["V27"])
             V28 = float(request.form["V28"])
             Amount = float(request.form["Amount"])
-            Class = int(request.form["Class"])
 
-            
+
+            data = [Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16, V17, V18, V19, V20, V21, V22, V23, V24, V25, V26, V27, V28, Amount]
+            data = np.array(data).reshape(1, 30)
+
+            pred = PredictionPipeline()
+            predictt = pred.predict(data)
+
+            return render_template('results.html', prediction = str(predictt))
+        
+        except Exception as e:
+            print('The Exception message is: ',e)
+            return 'something  went wrong'
 
 
 if __name__ == "__main__":
